@@ -1,0 +1,48 @@
+#header
+{
+  font-size:30pt;
+  color: blue;
+}
+
+
+  <div id="header">
+     	     <img src="images/Frog.png" style="width:4rem;height:4rem;">
+
+   </div>
+   <div id ="footer"
+      <footer id="footer"></footer>
+   <footer id="footer"></footer>
+     </div>
+   <div style="background: rgb(204,255,229); height: 3rem">
+	  <div style="float: left">
+	   Welcome to my site!
+      </div>
+	<div class="hobby">
+	 This is cool
+	 </div>
+	  
+	   <div style ="float:right">
+	   <a href="index.html">Home</a>|<a href="Projects.html">Projects</a>|<a href="CV.html">CV</a>| <a href="contact.html">Contact</a>
+	   <a href="contact.html"></a>
+	   </div>
+     </div>
+	 <div class="Projects">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="3D Models">Link 1</a>
+    <a href="Game ideas">Link 2</a>
+    <a href="sketches">Link 3</a>
+  </div>
+</div>
+.hobby
+{
+	Background: rgb(204,255,229);
+}
+
+#footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%           
+}

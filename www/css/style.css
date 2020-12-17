@@ -1,0 +1,27 @@
+#header
+{
+  font-size:30pt;
+  color: blue;
+}
+  
+footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%           
+}
+
+
+.hobby
+{
+	Background: rgb(204,255,229);
+}
+
+#footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%           
+}

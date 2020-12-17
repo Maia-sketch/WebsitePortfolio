@@ -1,0 +1,91 @@
+<html>
+ <head>
+   <title>Portfolio Site</title>
+   
+   <link rel="stylesheet" type="text/css" href="css/style.css"/>
+   <div id="header">
+   </div>
+   <footer id="footer"></footer>
+   <title>HTML5 Canvas</title>
+   </head>
+  
+  <body style="background: rgb(200, 200, 250)">
+      
+     <div style="background: rgb(204,230,229); height: 3rem">
+	  <div style="float: left">
+	   Welcome to my site!
+     
+	   </div>
+	   <div style ="float:right">
+	   <a href="index.html">Home</a>|<a href="3d models.html">3d models</a>| <a href="Game Ideas.html">Vids and more</a>| <a href="CV.html">CV</a>| <a href="animation.html">Animation</a>
+	   <br></br>
+	   <div style ="float: left"> 
+	   <canvas id="canvas" style="background: gray"></canvas>
+	   <script>
+function main()
+{
+ 
+ var canvas = document.getElementById("canvas");
+ canvas.width = 640;
+ canvas.height = 480;
+ var ctx = canvas.getContext('2d');
+  draw(ctx);
+   ctx.fillStyle = 'red';
+    ctx.fillRect(10, 10, 100, 100);
+var x = 10;
+function draw(ctx)
+{
+ ctx.fillStyle = 'red';
+ctx.fillRect(x, 10, 100, 100);
+ x++;
+ window.requestAnimationFrame(function(){draw(ctx);});
+ ctx.fillStyle = 'gray';
+ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+ctx.fillStyle = 'red';
+ctx.fillRect(x, 10, 100, 100);
+x++;
+window.requestAnimationFrame(function(){draw(ctx);});
+var playerImage;
+function load()
+{
+ 
+ playerImage = new Image();
+ playerImage.src = "player.png";
+}
+function main()
+{
+ ...
+ load();
+ ...
+}
+function draw(ctx)
+{
+ ctx.fillStyle = 'gray';
+ ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+ ctx.drawImage(playerImage, x, 10);
+ x++;
+ window.requestAnimationFrame(function(){draw(ctx);});
+ ctx.drawImage(playerImage, 0, 0,
+ playerImage.width / 2, playerImage.height / 2,
+ x, 10, playerImage.height / 2, playerImage.height / 2);function keydown(event)
+{
+ if(event.key == "ArrowLeft")
+ {
+ x--;
+ }
+ else if(event.key == "ArrowRight")
+ {
+ x++;
+ }
+}
+window.onload = main;
+window.addEventListener("keydown", keydown);
+window.addEventListener("keyup", keydown);
+}
+}
+window.onload = main;
+
+	   
+	   </body>
+</html>
+	   
